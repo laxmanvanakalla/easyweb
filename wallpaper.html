@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title >
+   Easy Web
+  </title>
+  <head>
+    <link rel="shortcut icon" href="C:\Users\RAMAN VANAKALLA\Desktop\a.png" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+  <style type="text/css">
+  h1{
+  	font-family: 'Exo', sans-serif;
+  	text-align: center;
+  }
+  	.out{
+  		position: relative;
+  		top: 18vh;
+  		left: 10vh;
+  		width: 50vh;
+  		height: 50vh;
+        border-radius: 25vh;
+  		background-color: #e6e6e6;
+  		 overflow: hidden;
+        padding: 0;
+        margin: 0;
+  	}
+  	a{
+  		color: red;
+  	}
+  	.item{
+  		top: 30vh;
+  		left: 75vh;
+  		width: 15vh;
+  		height:10vh;
+  		background-color: blue;
+
+  	}
+  	#centre{
+  		width: 10vh;
+        height:10vh;
+        background-color: grey;
+        left: 20vh;
+        top: 20vh;
+        position: relative;
+        border-radius: 12.5vh;
+        z-index: 888;
+
+  	  	}
+  	  	.it1:hover{
+  	  		background-color: cyan;
+  	  		transition: .4s;
+  	  	}
+  	.it1{
+  		width: 50%;
+        height:25vh;
+        background-color: #e6e6e6;
+        left: 12.5vh;
+        bottom: 15vh;
+         position: relative;
+         transform: rotate(45deg);
+         overflow: hidden;
+  	}
+  	.it2{
+  		transform: rotate(45deg);
+  		left: 30vh;
+  		bottom: 22vh;
+  	}
+  	.it3{
+  		bottom: 30vh;
+
+  	}
+  	.it4{
+  		left: -5vh;
+  		bottom: 73vh;
+  	}
+
+  	.left{
+  		height: 50vh;
+  		background-color:tra;
+  		overflow-y: scroll;
+	overflow-x: hidden;
+  	}
+  	.right{
+
+  		height: 50vh;
+
+  		overflow-y: scroll;
+	overflow-x: hidden;
+  	}
+  	.left1{
+  		height: 50vh;
+
+  		overflow-y: scroll;
+	overflow-x: hidden;
+  	}
+  	.right1{
+  		height: 50vh;
+  		overflow-y: scroll;
+	overflow-x: hidden;
+
+  	}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px white	;
+    border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f2f2f2;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #e6e6e6;
+}
+.clock{
+	 left: 20vh;
+	font-family: 'Exo', sans-serif;
+}
+#hour{
+	font-size: 6vh;
+}
+#minute{
+	font-size: 6vh;
+}
+#day{
+	font-size: 3vh;
+	letter-spacing: 1vh;
+	margin-left: 1vh;
+	right: 3.3vh;
+	position: relative;
+}
+#bw{
+	font-size: 6vh;
+}
+.bm{
+	margin-left: 1vh;
+	font-size: 3vh;
+	font-family: 'Exo', sans-serif;
+	float: left;
+	height: 5vh;
+	margin-bottom: 2vh;
+	padding: 0;
+
+}
+#edit,#del{
+	float: right;
+	padding-top: .5vh;
+}
+#coll{
+	background-color: white;
+	border-style: solid;
+	border-radius: 1vh;
+	height: 100%;
+
+}
+#coll a{
+	padding-left: 5px;
+	color: #808080;
+	;
+}
+#coll a:hover{
+	color: black;
+	background-color: white;
+}
+.butad{
+	background-color: white;
+	font-family: 'Exo', sans-serif;
+	outline: none;
+	top: 3vh;
+}
+#edit{
+	height:80%;
+	width: auto;
+	background-color:transparent;
+
+}
+#del{
+	height:70%;
+	width: auto;
+	background-color:transparent;
+	padding-left: 5px;
+}
+
+.right1 span{
+		text-align: left;
+}
+#show{
+	text-align: center;
+	font-family: 'Exo', sans-serif;
+	color: grey;
+	font-style: italic;
+
+}
+#pin{
+	position: relative;
+	top: 1vh;
+	height: 4vh;
+	width: auto;
+
+}
+#po{
+	height: auto;
+	  border-style: solid;
+	  border-radius: 1vh;
+	  min-height: 7vh;
+
+	 padding: 0;
+}
+#dothis{
+	font-size: 3vh;
+	font-family: 'Exo', sans-serif;
+}
+.time{
+	font-size: 3vh;
+}
+#se{
+	font-size: 2vh;
+}
+.pinbox{
+	padding: 0;
+}
+.dothisbox{
+	padding: 0;
+	 padding-left: 1vh;
+}
+#rem{
+	font-family: 'Exo', sans-serif;
+	font-size: 2vh;
+	top: 4vh;
+	padding: 0;
+}
+.hd{
+  padding: 0;
+}
+ .form1{
+ 		display: none;
+		background-color: #cccccc;
+ 		position: relative;
+		padding-top: 2vh;
+		padding-bottom: 1vh;
+		border-radius: 3vh;
+		font-family: 'Nanum Gothic', sans-serif;
+		padding-left: 0;
+		padding-right: 0;
+		z-index: 999;
+	}
+	#submit{
+		 float: right;
+		 background-color: white;
+		 border-radius: 1vh;
+	}
+	.form1 label{
+		font-size: 1.8vh;
+	}
+	.form1 p{
+		text-align: center;
+		font-size: 3vh;
+	}
+	.form1 input,.form1 select{
+		background-color: #f2f2f2;
+		right: 10vh;
+	}
+	.form1  :focus{
+		background-color: white;
+	}
+	#noday{
+		font-size: 1.5vh;
+	}
+	.sw{
+		left: 9vh;
+		font-family: 'Exo', sans-serif;
+		font-size: 10vh;
+	}
+	#res,#pause {
+ 		float: left;
+ 		position: relative;
+ 		left: 25vh;
+ 		top: 2vh;
+	}
+	 #h{
+	 	font-size: 3vh;
+	 }
+	 #ser, #ser1,#ser2{
+	 	position: relative;
+	 	left: 10vh;
+	 	width: 20vw;
+	 	 padding-left: 1vh;
+	 	outline: none;
+	 	color: black;
+	 	background-color: #e6e6e6;
+	 	margin: 0;
+	 	border: 0;
+	 	font-family: 'Exo', sans-serif;
+	 	font-size: 2.5vh;
+	 	top: 4vh;
+	 }
+	 #ser:focus ,#ser1:focus,#ser2:focus{
+	 	background-color: #595959;
+	 	color: white;
+	 }
+	 #serbut, #sertube,#serbook{
+	 	position: relative;
+	 	 left: 10vh;
+	 	 top: 4vh;
+	 	 font-size: 2.3vh;
+	 	 font-family: 'Exo', sans-serif;
+	 }
+
+	 #g{
+
+	 	height: 3vh;
+	 	width: auto;
+	 	position: relative;
+	 	 left: 10vh;
+	 	 top: 3.8vh;
+	 	 background-color: white;
+	 	 border-radius: 1.5vh;
+	 }
+	 #f{
+
+	 	height: 3vh;
+	 	width: auto;
+	 	position: relative;
+	 	 left: 11vh;
+	 	 top: 3.8vh;
+	 	 background-color: white;
+	 	  border-radius: 1.5vh;
+	 }
+	 #y{
+	 	 border-radius: 1.5vh;
+	 	height: 3vh;
+	 	width: auto;
+	 	position: relative;
+	 	 left: 12vh;
+	 	 top: 3.8vh;
+	 	 background-color: white;
+
+	 }
+     #y:hover,#g:hover,#f:hover{
+     	height: 4vh;
+     	width: auto;
+      transition: .5s;
+     }
+     #noto{
+      font-style: italic;
+      font-family: 'Exo', sans-serif;
+      text-align: center;
+      font-size: 2vh;
+     }
+  </style>
+ </head>
+ <body style="background-color: grey;">
+
+
+ <div>
+ <div class="col-lg-4">
+  	<div class="left col-lg-12">
+  		<div class="col-lg-12"><h1 class="col-lg-9">BOOK MARKS</h1><button class="butad col-lg-2" onclick="myfu()">add</button></div>
+  		<div>
+   		<p id="show" style="display: none">No bookmarks added till now :)</p>
+		</div>
+	</div>
+	<div class="col-lg-12 left1">srg</div>
+ </div>
+
+ <div class="col-lg-4">
+ 	<div class="clock col-lg-12">
+ 		<span id="hour">09</span>
+ 		<span id="bw">:</span>
+ 		<span id="minute">42</span>
+ 		<span id="sec"></span>
+ 		<p id="day">monday</p>
+    </div>
+ <div style="height: 5vh;">
+ <input type="search" id="ser" placeholder="Type and click on required icon" name="ser">
+
+ <img id="g" src="g.svg">
+ <img id="f" src="f.svg">
+ <img id="y" src="Y.svg">
+ </div>
+ <div class="out">
+ 	<div id="centre"></div>
+ 		<a href=""><div class="it1 "></div></a>
+  		<a href=""><div class="it1 it2"></div></a>
+   		<a href=""><div class="it1 it3"></div></a>
+    	<a href=""><div class="it1 it4"></div></a>
+    </div>
+</div>
+ <div class="col-lg-4">
+ 	<div class="col-lg-12 right">
+ 		<h1>STOP CLOCK</h1>
+
+ 		<div class="sw col-lg-12">
+ 			<span id="h">0</span><span style="font-size: 2vh">H</span>
+
+ 			<span id="m">00</span>
+ 			<span id=>:</span>
+ 			<span id="s">00</span>
+ 			<span id="ms" style="font-size: 4vh">00</span>
+    	</div>
+    	<button id="res">reset</button>
+ 		<button id="pause">start</button>
+ 	</div>
+
+	<div class="col-lg-12 right1">
+ 		<div class="col-lg-12 hd">
+  			<h1 class="col-lg-9">TO DO</h1><button class="col-lg-3" id="rem"  >remind me</button>
+  		</div>
+   		<form  class="form-horizontal form1 col-lg-12" >
+ 			<p>ADD REMINDER</p>
+ 			<div class="form-group col-lg-12">
+ 				<label class="control-label col-lg-3">TO DO</label>
+ 				<div class="col-lg-6">
+ 					<input type="text" id="dotyp" class="form-control " placeholder="Wanna do this..!!" required="true">
+ 				</div>
+ 			</div>
+ 			<div class="form-group col-lg-12">
+ 				<label class="control-label col-lg-3">BY TIME</label>
+ 				<div class="col-lg-9">
+ 					<input type="time" id="timtyp"  class="form-control"   required="true">
+ 				</div>
+ 			</div>
+ 			<div class="form-group col-lg-12">
+ 				<label class="control-label col-lg-3">BY DATE</label>
+ 				<div class="col-lg-9">
+ 					<input type="date"   id="dattyp" class="form-control" required="true">
+ 				</div>
+ 			</div>
+ 			<div class="form-group col-lg-12">
+ 				<label class="control-label col-lg-3">INTENSITY</label>
+ 				<div class="col-lg-9">
+ 					<select class="form-control">
+ 					<option id="1">IMPORTANT</option>
+ 					<option id="2">MEDIUM</option>
+ 					<option id="3">CASUAL</option>
+ 					</select>
+ 				</div>
+ 			</div>
+ 			<button type="button" id="submit">SUBMIT</button>
+ 		</form>
+  		<div id="do" class="col-lg-12">
+  			<div class="col-lg-1 pinbox" style="height: 100%"><img id="pin" src="pin.svg"></div>
+  			<div class="col-lg-7 dothisbox" style="height: 100%"><span id="dothis">complete   startup page</span></div>
+  			<div class="col-lg-4 time" style="height: 100%">
+  			<span>1</span><span id="noday">DAYS</span>
+        <span id=" ">09</span>
+ 				<span id="  ">:</span>
+ 				<span id=" ">42</span>
+
+
+  			</div>
+  		</div>
+
+ </div>
+
+</div>
+
+ </body>
+ <script type="text/javascript">
+ 	$(document).ready(function(){
+ 		console.log("anna");
+ 		myf();
+ 		var set=setInterval(myf,1000);
+ 		var ko=JSON.parse(localStorage.getItem('get')) || [];
+ 		console.log(ko);
+ 		if(ko.length>0)
+ 			document.getElementById("show").style.display="none";
+ 		else document.getElementById("show").style.display="block";
+ 		if(localStorage.getItem('lo')!="null")
+    {
+ 		todo =setInterval( tod,1000);
+  }
+  else{
+    $("#do").html('<p id="noto">No to-do list :(</p>');
+  }
+ 	});
+ 	$(window).on('load', function(){
+
+ 	      ob= JSON.parse(localStorage.getItem('get')) || [];
+ 	      console.log(ob);
+ 	   var i=0;
+	for(i=0;i<ob.length;i++)
+	{
+
+    	$(".left").append(' <div class="bm col-lg-5"><div id="coll"><a target="_blank" href="'+ ob[i].url+'">'+ob[i].book +'</a><img meta="'+ i+'" onclick="edit(this)" id="edit"  src="edit.svg"><img id="del" onclick="del(this)" src="delete.svg"></div></div>');
+	}
+
+    });
+  function tod()
+  {
+
+   kb= JSON.parse(localStorage.getItem('lo')) || [];
+        console.log(kb);
+     var i=0;
+      $("#do").html('');
+         for(i=0;i<kb.length;i++)
+         {
+
+          var tdate=new Date;
+          dt1=tdate.getTime();
+          var rdate=new Date(kb[i].time);
+          dt=rdate.getTime();
+          var days=Math.floor((dt-dt1)/86400000);
+          var h=rdate.getHours()-tdate.getHours();
+          if(tdate>=rdate)
+          {
+            var snooze=confirm(kb[i].doo+'  '+dt+' '+'want to snooze?');
+            if(snooze){
+            var p=  prompt("enter snooze time in minutes","5");
+            if(p!="")
+            {
+              snooz(kb[i].doo,rdate,p);
+            }
+            }
+            kb.splice(i,1);
+            localStorage.setItem('lo',JSON.stringify(kb));
+
+             tod();
+
+          }
+          else{
+          if(h<0)
+          {
+            h=24+h;
+          }
+          var min=rdate.getMinutes()-tdate.getMinutes();
+          if(min<0)
+            {
+              min=60+min;
+              h--;
+            }
+
+        $("#do").append('<div id="po" class="col-lg-12"><div class="col-lg-1 pinbox" style="height:100%"><img id="pin" src="F:/2-2/Project/pin.svg"></div><div class="col-lg-7 dothisbox" style="height: 100%"><span id="dothis">'+kb[i].doo+ '</span></div><div class="col-lg-4 time" style="height: 100%"><span>'+days+'</span><span id="noday">DAYS</span><span id=" ">'+ h+'</span> <span id="  ">:</span><span id=" ">'+min+'</span> </div></div>');
+          }
+        }
+  }
+ 	function myf()
+ 	{
+
+ 		var date= new Date();
+ 		$("#hour").text(date.getHours());
+ 		$("#minute").text(date.getMinutes());
+ 		var i=date.getDay();
+ 		var ar=["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
+ 		$("#day").text(ar[date.getDay()]);
+ 		$("#sec").text(date.getSeconds());
+ 		if(date.getHours()>=19)
+ 		{
+
+ 			$("body").css("background-color","grey");
+ 			$("body").css("color","white");
+ 			$("button").css("color","black");
+ 			$("div").css("border-color","white");
+ 			$("#pin").css("fill","white");
+      $("#po").css("border-color","white");
+ 		}
+ 		else {   $("body").css("background-color","transparent");$("body").css("color","black");
+
+ 			$("div").css("border-color","grey");
+      $("#po").css("border-color","grey");
+    }
+
+ 	}
+
+   function myfu(){
+   	var url;
+   	var book = prompt("BookMark", "");
+   	if(book==null||book=="")
+    {alert("user cancelled BookMark");}
+	else{
+		book=book.substring(0,10);
+		var url = prompt("Url", "");
+		if(url==null||url=="")
+		alert("user cancelled BookMark")
+		else{
+			 fun(book,url);
+			 window.location.reload();
+			}
+			}
+	}
+	function fun(book,url)
+	{
+		var ok=confirm("stop clock will restart");
+		if(ok){
+		if(localStorage.getItem('get')!=null)
+			{
+				alert("added");
+				var olditem= [];
+				olditem =JSON.parse(localStorage.getItem('get'));
+				console.log(olditem);
+				var newItem = {
+        		'book': book,
+        		'url': url
+    			};
+    			olditem.push(newItem);
+    			localStorage.setItem('get',JSON.stringify(olditem));
+			}
+			else{
+				alert("set now");
+				var newItem = {
+        	'book': book,
+        	'url': url,
+    		};
+    		var now=[];
+    		now.push(newItem);
+    		localStorage.setItem('get',JSON.stringify(now));
+			}
+		}
+	}
+   function edit( a)
+   {
+   	var res= confirm("Stop clock will restart");
+   	if(res==true)
+   	{
+   	var ob=JSON.parse(localStorage.getItem('get'))|| [];
+   	var url;
+   	var book = prompt("BookMark", ob[Number(a.getAttribute("meta"))].book);
+   	if(book==""||book=="")
+    {alert("user cancelled BookMark"); return;}
+	else{
+		book=book.substring(0,10);
+		var url = prompt("Url", ob[Number(a.getAttribute("meta"))].url);
+		if(url==null||url=="")
+		{alert("user cancelled BookMark"); return;}
+		else{
+
+
+			 ob[Number(a.getAttribute("meta"))].book=book;
+			 ob[Number(a.getAttribute("meta"))].url=url;
+			 localStorage.setItem('get',JSON.stringify(ob));
+			 window.location.reload();
+			}
+			}
+	}
+}
+
+   	 function del(a)
+   	 {
+   	 	 var res= confirm("Stop clock will restart");
+   	 	 if(res==true)
+   	 	 {
+   	 	 ob=JSON.parse(localStorage.getItem('get'))|| [];
+   	 	 ob.splice(Number(a.getAttribute("meta")), 1);
+   	 	 localStorage.setItem('get',JSON.stringify(ob));
+   	 	 window.location.reload();
+   	 	}
+
+   	 }
+     $(function(){
+     	$( "#rem" ).click(function() {
+                 $(".form1").slideToggle("slow");
+                 $(".hd").slideToggle();
+                 $("#do").slideToggle();
+            });
+     	$("#submit").click(function(){
+     		if($("#dotyp").val()&&$("#timtyp").val()&&$("#dattyp").val())
+     			{
+            if(localStorage.getItem('lo')!="null")
+            {
+           var ar=["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
+            var ar1=["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
+            var doo=$("#dotyp").val();
+            var time=$("#timtyp").val()
+            var date = $("#dattyp").val();
+             var inn=($("select").val());
+             var nd=new Date(date).getDay();
+             var mon=new Date(date).getMonth();
+             nd=ar[nd];
+             time=nd+' '+ar1[mon]+' '+date.slice(8,10)+' '+date.slice(0,4)+' '+time+':00 GMT+0530 (India Standard Time)';
+             var newItem={
+              doo:doo,
+              time:time,
+             }
+             var ob=[];
+               ob=JSON.parse(localStorage.getItem('lo')) ;
+             ob.push(newItem);
+             localStorage.setItem('lo',JSON.stringify(ob));
+     				}
+            else{
+            var ar=["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
+            var ar1=["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
+            var doo=$("#dotyp").val();
+            var time=$("#timtyp").val()
+            var date = $("#dattyp").val();
+             var inn=($("select").val());
+             var nd=new Date(date).getDay();
+             var mon=new Date(date).getMonth();
+             nd=ar[nd];
+             time=nd+' '+ar1[mon]+' '+date.slice(8,10)+' '+date.slice(0,4)+' '+time+':00 GMT+0530 (India Standard Time)';
+             var newItem={
+              doo:doo,
+              time:time,
+             }
+             console.log(newItem);
+             var now=[];
+             now.push(newItem);
+             localStorage.setItem('lo',JSON.stringify(now));
+             console.log(localStorage.getItem('lo'));
+            }
+     			  }
+
+     		else alert("kokk");
+     	});
+     });
+
+     $(function()
+     {
+     	var inc
+     	var pause=false;
+     	var start=true;
+     	$("#res").click(function(){
+     		$("#h").text('00');
+     		$("#m").text('00');
+     		$('#s').text('00');
+     		$('#ms').text('00');
+
+     		clearInterval(minc);
+     		start=true;
+     		pause=false;
+     		$("#pause").text("start");
+     	});
+     	$('#pause').click(function(){
+     		if(start){
+
+     			  minc =setInterval(ff,10);
+     			  $("#pause").text("pause");
+     			  start=false;
+     			  pause=true;
+     				}
+     		else{
+
+     			clearInterval(minc);
+     			$("#pause").text("start");
+     			start=true;
+     			pause=false;
+     		}
+     });
+
+     });
+     function ff()
+     {
+     	if(Number($('#ms').text())<99)
+     		 $('#ms').text(Number($('#ms').text())+1);
+     	else
+     		{ $('#ms').text(0); qf();}
+     }
+     function qf(){
+     		if(Number($('#s').text())<59)
+     		 $('#s').text(Number($('#s').text())+1);
+     		 else {
+     		 	if(Number($('#m').text())<59)
+     		 		{
+     		 		$('#m').text(Number($('#m').text())+1);
+     		 		$('#s').text(0);
+     		 		}
+     		 		else{
+
+    					$('#h').text(Number($('#h').text())+1);
+    					$('#m').text(0);
+        		 		}
+     		 }
+     		$("#h").text();
+     		$("#m").text( );
+
+     };
+     $(function(){
+     	$("#g").click(function()
+     	{
+     		var sr=$("#ser").val();
+     		window.open('https://www.google.co.in/search?q='+sr+'&rlz=1C1NDCM_enIN780IN780&oq='+sr+'&aqs=chrome..69i57.5765j0j4&sourceid=chrome&ie=UTF-8','_blank')
+     	});
+     	$("#y").click(function()
+     	{
+     		var sr=$("#ser").val();
+     		window.open('https://www.youtube.com/results?search_query='+sr,'_blank')
+     	});
+     	$("#f").click(function()
+     	{
+     		var sr=$("#ser").val();
+     		window.open(' https://www.facebook.com/search/str/'+sr+'/keywords_search','_blank');
+     	});
+     })
+ </script>
+ </html>
